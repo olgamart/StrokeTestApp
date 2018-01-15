@@ -13,6 +13,7 @@ class ModeCaseViewController: UIViewController {
     @IBOutlet weak var frameCaseLabel: UILabel!    
     @IBOutlet var numberButtons: [UIButton]!
     @IBOutlet var modeButtons: [UIButton]!
+    var pt:Patient = Patient()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +72,13 @@ class ModeCaseViewController: UIViewController {
         Patient.set_fr = 4
         frameCaseLabel.text = "4 - Левый нижний угол"
     }
+    
+    /*
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let desninationVC: BallViewController = segue.destination as! BallViewController
+        desninationVC.p = pt
+    }
+   */
     
     
     

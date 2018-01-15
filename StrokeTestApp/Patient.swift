@@ -9,6 +9,7 @@
 import UIKit
 
 class Patient {
-    static var testing: Bool = true
-    static var set_fr: Int = 1
+ static    var testing: Bool = true
+ static   var set_fr: Int = 1
+    
 }

@@ -11,10 +11,14 @@ import UIKit
 class BallViewController: UIViewController {
     @IBOutlet weak var modeCaseLabel: UILabel!
     
+    var p: Patient = Patient()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         if Patient.testing {
-            modeCaseLabel.text = "Тест"
+            modeCaseLabel.text = "Тест"            
         } else {
             modeCaseLabel.text = "Тренинг"
         }
@@ -28,7 +32,7 @@ class BallViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
 
